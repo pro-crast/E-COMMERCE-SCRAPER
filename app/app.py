@@ -6,9 +6,9 @@ app = Flask(__name__)
 def get_products_from_db():
     # Connect to your PostgreSQL database
     conn = psycopg2.connect(
-        dbname="E-commerce Scraper",
+        dbname="proj_db",
         user="postgres",
-        password="password",
+        password="dbms4me",
         host="localhost",
         port="5432"
     )

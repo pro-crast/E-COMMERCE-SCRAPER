@@ -20,9 +20,9 @@ def scrape_amazon(search_query, max_results=10, show_images=True):
     try:
         # Connect to the PostgreSQL database
         conn = psycopg2.connect(
-            dbname="E-commerce Scraper",
+            dbname="proj_db",
             user="postgres",
-            password="password",
+            password="dbms4me",
             host="localhost",
             port="5432"
         )
@@ -89,4 +89,4 @@ if __name__ == '__main__':
     show_images = True
     scrape_amazon(search_query, max_results, show_images)
     end = time.perf_counter()
-    print(f"Finished in {round(end-start)}s")
+    print(f"Finished in {round(end-start)}s")    
